@@ -1,0 +1,83 @@
+Aqui está um resumo estruturado do conteúdo do curso com base no material que você forneceu:
+
+---
+
+# **Resumo: Desenvolvimento de Aplicações com Azure OpenAI e Semantic Kernel**
+
+## **1. Objetivo do Desafio**
+O desafio tem como foco a exploração do **Azure OpenAI** para desenvolvimento de aplicações práticas, incluindo:
+- Chamadas de **API** para interação com modelos de IA.
+- Integração com o **Semantic Kernel** para criação de agentes de IA.
+
+## **2. Pré-requisitos**
+- Acesso ao **Azure OpenAI**.
+- Noção básica sobre o funcionamento de **Modelos de Linguagem (LLMs)**.
+- Conhecimento fundamental em codificação.
+
+## **3. Conceitos Principais**
+
+### **3.1 Azure OpenAI API**
+A API do Azure OpenAI oferece suporte a diferentes modos:
+- **Chat**: Modelos conversacionais como GPT.
+- **Completar**: Preenchimento de texto baseado em prompts.
+- **Imagens**: Geração de imagens via **DALL·E 3**.
+- **Áudio**: Processamento de voz (caso aplicável).
+
+#### **Exemplo de Chamada de API**
+**Criando uma chamada para geração de texto:**
+```python
+client = AzureOpenAI(
+    azure_endpoint=os.getenv("AZURE_OPENAI_ENDPOINT"),
+    api_key=os.getenv("AZURE_OPENAI_API_KEY"),
+    api_version="2024-02-01"
+)
+
+response = client.chat.completions.create(
+    model=os.getenv("AZURE_OPENAI_DEPLOYMENT_NAME"),
+    messages=messages,
+    temperature=0.7
+)
+```
+#### **Parâmetros Importantes**
+- `Model ID` → Nome do modelo configurado.
+- `Temperature` → Controle de aleatoriedade na resposta.
+- `Max Tokens` → Número máximo de tokens na resposta.
+- `Top P` → Filtro de amostragem probabilística.
+- `Presence/Frequency penalties` → Ajuste para evitar repetições.
+
+---
+
+### **3.2 Introdução ao Semantic Kernel**
+O **Semantic Kernel (SK)** funciona como um middleware de IA, permitindo a criação de agentes inteligentes e automação de processos.
+
+#### **Principais Componentes**
+- **Kernel** → Motor que gerencia a execução de IA.
+- **Functions** → Funções reutilizáveis de IA.
+- **Memory** → Armazenamento baseado em **Vector Stores** para busca rápida de informações.
+
+#### **Funcionalidades Extras**
+- Implementação de **funções automatizadas**.
+- Uso de **agentes de IA** para tomada de decisões.
+
+---
+
+## **4. Armazenamento e Monitoramento**
+- **Azure Monitor** pode ser utilizado para rastrear logs e segurança das chamadas API.
+- O armazenamento seguro dos dados no **Azure** deve ser considerado para evitar vazamento de informações sensíveis.
+
+---
+
+## **5. Mãos na Massa (Hands-on)**
+Os participantes são incentivados a:
+1. Explorar e testar chamadas de API do **Azure OpenAI**.
+2. Utilizar o **Semantic Kernel** para criar aplicações inteligentes.
+3. Armazenar os códigos em um **repositório GitHub** e compartilhar o link da implementação.
+
+---
+
+## **6. Links Úteis**
+- 📌 **Referência da API**: [Azure OpenAI Service REST API](https://learn.microsoft.com/en-us/azure/ai-services/openai/reference)
+- 📌 **Documentação do Semantic Kernel**: [Introdução ao SK](https://learn.microsoft.com/en-us/semantic-kernel/overview)
+- 📌 **Monitoramento do Azure OpenAI**: [Como Monitorar](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/monitor-openai)
+
+---
