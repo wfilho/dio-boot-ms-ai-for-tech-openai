@@ -1,0 +1,75 @@
+# **Resumo: Azure OpenAI no Playground**
+
+## **Objetivo do Curso**
+O curso tem como propósito ensinar a utilização do **Playground do Azure OpenAI**, compreendendo suas configurações, parâmetros e aplicações para geração de conteúdos baseados em IA.
+
+## **Pré-requisitos**
+- Conta **Azure válida**.
+- Permissão de **Administrador** no Azure OpenAI.
+- Créditos ou método de pagamento configurado.
+
+---
+
+## **Conteúdo do Curso**
+
+### **1. Introdução**
+- Apresentação do **Azure OpenAI** e seu uso no **Playground**.
+- Explicação sobre como configurar e acessar os recursos necessários.
+
+### **2. Deploy**
+- Passos para fazer o **deploy de um recurso do Azure OpenAI**.
+- Importância do **Azure AI Foundry**.
+
+### **3. Interface do Playground**
+- Navegação na **UI** do Playground.
+- Recursos disponíveis para teste e ajuste de prompts.
+
+### **4. O que é o Playground?**
+- Ambiente para desenvolvimento e testes de **prompts**.
+- Ferramentas disponíveis para personalização da saída dos modelos.
+
+### **5. Recursos do Playground**
+- Configurações avançadas como **tokenização**, ajuste de temperatura e penalidades.
+- Como explorar e testar diferentes abordagens na criação de prompts.
+
+### **6. Tokenização**
+- Conceito de **tokens** e sua importância no processamento de texto pela IA.
+- Teste prático com o **tokenizador**.
+
+### **7. System Message**
+- Definição e importância da **System Message** para personalizar respostas da IA.
+- Técnicas como **Zero-Shot, Few-Shot** e exemplos de mensagens estruturadas.
+
+### **8. Temperatura vs. Top-P**
+- **Temperatura**: Define a aleatoriedade das respostas (0 = previsível, 1 = mais criativo).
+- **Top-P**: Filtra o conjunto de palavras possíveis para manter coerência.
+
+### **9. Frequency Penalty vs. Presence Penalty**
+- **Frequency Penalty**: Penaliza palavras repetidas para evitar repetições excessivas.
+- **Presence Penalty**: Incentiva a IA a usar novas palavras para mais diversidade.
+
+### **10. Multimodalidade**
+- Uso de IA para **texto, imagem e áudio**.
+- Introdução ao **DALL-E** e **text-to-speech** no Azure OpenAI.
+
+### **11. Hands-On: Explorando o Playground**
+- Experimentação prática dos conceitos abordados.
+- Desenvolvimento de prompts personalizados e ajustes nos parâmetros.
+
+### **12. Aplicações Práticas**
+- Criação e integração com **Blobs** no Azure.
+- Construção de **chats interativos** via CLI.
+- Geração de **áudio e imagens** com modelos OpenAI.
+
+---
+
+## **Materiais de Apoio**
+- [Documentação oficial do Azure OpenAI](https://learn.microsoft.com/en-us/azure/ai-services/openai/)
+- Tutoriais sobre configuração de **recursos, tokens, temperatura e multimodalidade**.
+
+---
+
+### **Conclusão**
+O curso oferece uma base sólida para explorar o **Azure OpenAI Playground**, permitindo aos usuários testar diferentes configurações para otimizar a **geração de conteúdos**, seja por meio de **texto, imagens ou áudio**. O conhecimento adquirido pode ser aplicado para **automação, criação de assistentes virtuais e personalização de respostas** utilizando os modelos da OpenAI dentro do Azure.
+
+---
